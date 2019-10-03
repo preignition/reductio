@@ -30,4 +30,4 @@ var reductio_avg = {
 	}
 };
 
-module.exports = reductio_avg;
+export default reductio_avg;

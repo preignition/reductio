@@ -19,4 +19,4 @@ var reductio_custom = {
 	}
 };
 
-module.exports = reductio_custom;
+export default reductio_custom;

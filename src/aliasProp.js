@@ -10,4 +10,4 @@ var reductio_alias_prop = {
 	}
 };
 
-module.exports = reductio_alias_prop;
+export default reductio_alias_prop;

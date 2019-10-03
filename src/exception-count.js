@@ -34,4 +34,4 @@ var reductio_exception_count = {
 	}
 };
 
-module.exports = reductio_exception_count;
+export default reductio_exception_count;

@@ -22,4 +22,4 @@ var reductio_sum = {
 	}
 };
 
-module.exports = reductio_sum;
+export default reductio_sum;

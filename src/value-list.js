@@ -1,4 +1,4 @@
-var crossfilter = require('crossfilter2');
+import crossfilter from 'crossfilter2';
 
 var reductio_value_list = {
 	add: function (a, prior, path) {
@@ -32,4 +32,4 @@ var reductio_value_list = {
 	}
 };
 
-module.exports = reductio_value_list;
+export default reductio_value_list;

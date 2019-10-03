@@ -44,4 +44,4 @@ const reductio_cap = function (prior, f, p) {
     };
 };
 
-module.exports = reductio_cap;
+export default reductio_cap;

@@ -32,4 +32,4 @@ var reductio_max = {
 	}
 };
 
-module.exports = reductio_max;
+export default reductio_max;

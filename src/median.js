@@ -46,4 +46,4 @@ var reductio_median = {
 	}
 };
 
-module.exports = reductio_median;
+export default reductio_median;

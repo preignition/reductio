@@ -34,4 +34,4 @@ var reductio_std = {
 	}
 };
 
-module.exports = reductio_std;
+export default reductio_std;

@@ -15,4 +15,4 @@ var reductio_alias = {
 	}
 };
 
-module.exports = reductio_alias;
+export default reductio_alias;

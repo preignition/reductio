@@ -22,4 +22,4 @@ var reductio_sum_of_sq = {
 	}
 };
 
-module.exports = reductio_sum_of_sq;
+export default reductio_sum_of_sq;

@@ -1,4 +1,4 @@
-var crossfilter = require('crossfilter2');
+import crossfilter from 'crossfilter2';
 
 var reductio_nest = {
 	add: function (keyAccessors, prior, path) {
@@ -55,4 +55,4 @@ var reductio_nest = {
 	}
 };
 
-module.exports = reductio_nest;
+export default reductio_nest;

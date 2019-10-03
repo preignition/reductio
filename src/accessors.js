@@ -1,4 +1,4 @@
-var reductio_parameters = require('./parameters.js');
+import reductio_parameters from './parameters.js';
 
 function assign(target) {
 	if (target == null) {
@@ -17,7 +17,7 @@ function assign(target) {
 		}
 	}
 	return output;
-};
+}
 
 function accessor_build(obj, p) {
 	// obj.order = function(value) {
@@ -280,4 +280,4 @@ var reductio_accessors = {
 	build: accessor_build
 };
 
-module.exports = reductio_accessors;
+export default reductio_accessors;

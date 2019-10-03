@@ -32,4 +32,4 @@ var reductio_min = {
 	}
 };
 
-module.exports = reductio_min;
+export default reductio_min;

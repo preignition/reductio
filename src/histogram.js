@@ -1,4 +1,4 @@
-var crossfilter = require('crossfilter2');
+import crossfilter from 'crossfilter2';
 
 var reductio_histogram = {
 	add: function (a, prior, path) {
@@ -42,4 +42,4 @@ var reductio_histogram = {
 	}
 };
 
-module.exports = reductio_histogram;
+export default reductio_histogram;

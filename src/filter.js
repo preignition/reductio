@@ -26,4 +26,4 @@ var reductio_filter = {
 	}
 };
 
-module.exports = reductio_filter;
+export default reductio_filter;

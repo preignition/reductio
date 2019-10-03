@@ -22,4 +22,4 @@ var reductio_data_list = {
 	}
 };
 
-module.exports = reductio_data_list;
+export default reductio_data_list;

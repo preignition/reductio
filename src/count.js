@@ -23,4 +23,4 @@ var reductio_count = {
 	}
 };
 
-module.exports = reductio_count;
+export default reductio_count;

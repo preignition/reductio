@@ -34,4 +34,4 @@ var reductio_exception_sum = {
 	}
 };
 
-module.exports = reductio_exception_sum;
+export default reductio_exception_sum;

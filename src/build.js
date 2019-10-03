@@ -1,22 +1,22 @@
-var reductio_filter = require('./filter.js');
-var reductio_count = require('./count.js');
-var reductio_sum = require('./sum.js');
-var reductio_avg = require('./avg.js');
-var reductio_median = require('./median.js');
-var reductio_min = require('./min.js');
-var reductio_max = require('./max.js');
-var reductio_value_count = require('./value-count.js');
-var reductio_value_list = require('./value-list.js');
-var reductio_exception_count = require('./exception-count.js');
-var reductio_exception_sum = require('./exception-sum.js');
-var reductio_histogram = require('./histogram.js');
-var reductio_sum_of_sq = require('./sum-of-squares.js');
-var reductio_std = require('./std.js');
-var reductio_nest = require('./nest.js');
-var reductio_alias = require('./alias.js');
-var reductio_alias_prop = require('./aliasProp.js');
-var reductio_data_list = require('./data-list.js');
-var reductio_custom = require('./custom.js');
+import reductio_filter from './filter.js';
+import reductio_count from './count.js';
+import reductio_sum from './sum.js';
+import reductio_avg from './avg.js';
+import reductio_median from './median.js';
+import reductio_min from './min.js';
+import reductio_max from './max.js';
+import reductio_value_count from './value-count.js';
+import reductio_value_list from './value-list.js';
+import reductio_exception_count from './exception-count.js';
+import reductio_exception_sum from './exception-sum.js';
+import reductio_histogram from './histogram.js';
+import reductio_sum_of_sq from './sum-of-squares.js';
+import reductio_std from './std.js';
+import reductio_nest from './nest.js';
+import reductio_alias from './alias.js';
+import reductio_alias_prop from './aliasProp.js';
+import reductio_data_list from './data-list.js';
+import reductio_custom from './custom.js';
 
 function build_function(p, f, path) {
 	// We have to build these functions in order. Eventually we can include dependency
@@ -195,4 +195,4 @@ var reductio_build = {
 	build: build_function
 };
 
-module.exports = reductio_build;
+export default reductio_build;

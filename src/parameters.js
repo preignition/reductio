@@ -26,4 +26,4 @@ var reductio_parameters = function() {
 	};
 };
 
-module.exports = reductio_parameters;
+export default reductio_parameters;

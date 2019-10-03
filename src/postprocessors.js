@@ -1,4 +1,4 @@
-module.exports = function(reductio){
+export default function(reductio){
     reductio.postprocessors = {};
     reductio.registerPostProcessor = function(name, func){
         reductio.postprocessors[name] = func;

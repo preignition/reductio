@@ -1,8 +1,8 @@
-var reductio_build = require('./build.js');
-var reductio_accessors = require('./accessors.js');
-var reductio_parameters = require('./parameters.js');
-var reductio_postprocess = require('./postprocess');
-var crossfilter = require('crossfilter2');
+import reductio_build from './build.js';
+import reductio_accessors from './accessors.js';
+import reductio_parameters from './parameters.js';
+import reductio_postprocess from './postprocess';
+import crossfilter from 'crossfilter2';
 
 function reductio() {
 	var parameters = reductio_parameters();
@@ -83,4 +83,4 @@ function reductio() {
 require('./postprocessors')(reductio);
 reductio_postprocess = reductio_postprocess(reductio);
 
-module.exports = reductio;
+export default reductio;
