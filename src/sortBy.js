@@ -32,4 +32,4 @@ export default function (prior) {
         }
         return prior().sort(comparer(pluck_n(value), order));
     };
-};
+}

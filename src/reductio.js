@@ -70,7 +70,7 @@ function reductio() {
 			group.reduce(funcs.reduceAdd, funcs.reduceRemove, funcs.reduceInitial);
 		}
 
-		postprocess(group, parameters, funcs);
+		postprocessed(group, parameters, funcs);
 
 		return group;
 	}
@@ -80,7 +80,7 @@ function reductio() {
 	return my;
 }
 
-require('./postprocessors')(reductio);
-postprocess = postprocess(reductio);
+// require('./postprocessors')(reductio);
+const postprocessed = postprocess(reductio);
 
 export default reductio;
