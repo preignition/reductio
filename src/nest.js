@@ -1,6 +1,6 @@
 import crossfilter from 'crossfilter2';
 
-var reductio_nest = {
+var nest = {
 	add: function (keyAccessors, prior, path) {
 		var i; // Current key accessor
 		var arrRef;
@@ -55,4 +55,4 @@ var reductio_nest = {
 	}
 };
 
-export default reductio_nest;
+export default nest;

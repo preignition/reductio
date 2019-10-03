@@ -1,11 +1,11 @@
-import reductio_build from './build.js';
-import reductio_accessors from './accessors.js';
-import reductio_parameters from './parameters.js';
-import reductio_postprocess from './postprocess';
+import build from './build.js';
+import accessors from './accessors.js';
+import parameters from './parameters.js';
+import postprocess from './postprocess';
 import crossfilter from 'crossfilter2';
 
 function reductio() {
-	var parameters = reductio_parameters();
+	var parameters = parameters();
 
 	var funcs = {};
 
@@ -17,7 +17,7 @@ function reductio() {
 			reduceInitial: function () { return {}; },
 		};
 
-		reductio_build.build(parameters, funcs);
+		build.build(parameters, funcs);
 
 		// If we're doing groupAll
 		if(parameters.groupAll) {
@@ -70,17 +70,17 @@ function reductio() {
 			group.reduce(funcs.reduceAdd, funcs.reduceRemove, funcs.reduceInitial);
 		}
 
-		reductio_postprocess(group, parameters, funcs);
+		postprocess(group, parameters, funcs);
 
 		return group;
 	}
 
-	reductio_accessors.build(my, parameters);
+	accessors.build(my, parameters);
 
 	return my;
 }
 
 require('./postprocessors')(reductio);
-reductio_postprocess = reductio_postprocess(reductio);
+postprocess = postprocess(reductio);
 
 export default reductio;

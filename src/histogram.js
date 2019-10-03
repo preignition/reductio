@@ -1,6 +1,6 @@
 import crossfilter from 'crossfilter2';
 
-var reductio_histogram = {
+var histogram = {
 	add: function (a, prior, path) {
 		var bisect = crossfilter.bisect.by(function(d) { return d; }).left;
 		var bisectHisto = crossfilter.bisect.by(function(d) { return d.x; }).right;
@@ -42,4 +42,4 @@ var reductio_histogram = {
 	}
 };
 
-export default reductio_histogram;
+export default histogram;

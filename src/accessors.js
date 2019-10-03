@@ -1,4 +1,4 @@
-import reductio_parameters from './parameters.js';
+import parameters from './parameters.js';
 
 function assign(target) {
 	if (target == null) {
@@ -228,7 +228,7 @@ function accessor_build(obj, p) {
 		} else {
 			if(!p.values) p.values = {};
 			p.values[value] = {};
-			p.values[value].parameters = reductio_parameters();
+			p.values[value].parameters = parameters();
 			accessor_build(p.values[value], p.values[value].parameters);
 			if(accessor) p.values[value].accessor = accessor;
 			return p.values[value];
@@ -276,8 +276,8 @@ function accessor_build(obj, p) {
 
 }
 
-var reductio_accessors = {
+var accessors = {
 	build: accessor_build
 };
 
-export default reductio_accessors;
+export default accessors;
