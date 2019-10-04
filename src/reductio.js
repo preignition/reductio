@@ -1,11 +1,12 @@
 import build from './build.js';
 import accessors from './accessors.js';
-import parameters from './parameters.js';
+import params from './parameters.js';
 import postprocess from './postprocess';
+import postprocessors from './postprocessors';
 import crossfilter from 'crossfilter2';
 
 function reductio() {
-	var parameters = parameters();
+	var parameters = params();
 
 	var funcs = {};
 
@@ -80,7 +81,7 @@ function reductio() {
 	return my;
 }
 
-// require('./postprocessors')(reductio);
+postprocessors(reductio);
 const postprocessed = postprocess(reductio);
 
 export default reductio;
