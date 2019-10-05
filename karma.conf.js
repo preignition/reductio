@@ -7,7 +7,8 @@ module.exports = function(config) {
     files: [
 		'node_modules/crossfilter2/crossfilter.min.js',
 		'node_modules/lodash/index.js',
-		'reductio.js',
+     // {pattern: 'main.js', type: 'module'},
+		'reductio.min.js',
      { pattern: config.grep ? config.grep : 'test/**/*.test.js', type: 'module' },
 		// 'test/**/*.test.js'
     ],

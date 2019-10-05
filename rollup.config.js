@@ -8,10 +8,14 @@ const name = 'reductio'
 
 const config = {
   input: `main.js`,
+  external: ['crossfilter2'],
   output: {
     file: `${name}.js`,
     name: name,
     format: "umd",
+    globals: {
+      crossfilter2: 'crossfilter'
+    },
     indent: true,
     extend: true,
     banner: `// ${meta.homepage} v${meta.version} Copyright ${(new Date).getFullYear()} ${meta.author.name}`
